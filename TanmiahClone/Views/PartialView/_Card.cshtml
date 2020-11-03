@@ -1,0 +1,27 @@
+﻿@model TanmiahClone.Models.CardModel
+
+
+@if (Model != null)
+{
+
+    <section class="section-recipe">
+        <div class="container">
+            <div class="video-recipe-widget">
+                <div class="video-placeholder">
+                    <img class="video-placeholder--img" src="@Url.Content(Model.Image)" alt="">
+                </div>
+                <div class="video-recipe-desc bg-grey">
+                    <h3 class="video-recipe-desc--heading heading-bold-secondary">
+                        @Model.Title
+                    </h3>
+                    <p class="video-recipe-desc--text">
+                        @Model.Discription
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+
+
+

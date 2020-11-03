@@ -18,6 +18,21 @@ namespace TanmiahClone
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+            routes.MapRoute(
+              name: "breadcrum",
+              url: "BreadCrumController/BreadCrumAction",
+              defaults: new { controller = "BreadCrumController", action = "BreadCrumAction" }
+          );
+        }
+        public static void RegisterViewEngins(ICollection<IViewEngine> engines)
+        {
+            engines.Clear();
+            engines.Add(new RazorViewEngine()
+            {
+
+                PartialViewLocationFormats = new[] { "~/Views/PartialView/{0}.cshtml" }
+
+            });
         }
     }
 }

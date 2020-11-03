@@ -1,0 +1,83 @@
+﻿@model TanmiahClone.Models.InterestingThingsModel
+
+@if (Model != null)
+{
+    <div class="listing-cards listing-slider">
+        <div class="container container-medium container-auto-adjust">
+            <h2 class="main-heading-secondary">
+                @Model.Title
+            </h2>
+            <div class="listing-container">
+                <div class="pos-rel">
+                    <div class="swiper-container js-listing-slider " data-rows-itemcount="2">
+                        <div class="swiper-wrapper">
+                            @Html.Action("InterestAction", "InterestingCart")
+
+
+
+
+                            @*<div class="swiper-slide">
+                                <div class="card">
+                                    <a class="full-click" href="javascript:void(0)">product</a>
+                                    <div class="card-media">
+                                        <div class="card-image">
+                                            <img src="~/Content/Common/images/listing-cards/image-6.jpg" class="object-fit"
+                                                 alt="Listing image">
+                                        </div>
+                                    </div>
+                                    <div class="card-info-small">Frozen food</div>
+                                    <h3>Featured Product Name</h3>
+                                    <p>
+                                        This is a short description about the type of products provided by Agricultural
+                                        Development
+                                        Company. Lorem ipsum dolor sit amet.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <a class="full-click" href="javascript:void(0)">product</a>
+                                    <div class="card-media">
+                                        <div class="card-image">
+                                            <img src="~/Content/Common/images/listing-cards/image-6.jpg" class="object-fit"
+                                                 alt="Listing image">
+                                        </div>
+                                    </div>
+                                    <div class="card-info-small">Frozen food</div>
+                                    <h3>Featured Product Name</h3>
+                                    <p>
+                                        This is a short description about the type of products provided by Agricultural
+                                        Development
+                                        Company. Lorem ipsum dolor sit amet.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <a class="full-click" href="javascript:void(0)">product</a>
+                                    <div class="card-media">
+                                        <div class="card-image">
+                                            <img src="~/Content/Common/images/listing-cards/image-6.jpg" class="object-fit"
+                                                 alt="Listing image">
+                                        </div>
+                                    </div>
+                                    <div class="card-info-small">Frozen food</div>
+                                    <h3>Featured Product Name</h3>
+                                    <p>
+                                        This is a short description about the type of products provided by Agricultural
+                                        Development
+                                        Company. Lorem ipsum dolor sit amet.
+                                    </p>
+                                </div>
+                            </div>*@
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+

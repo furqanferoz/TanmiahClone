@@ -1,0 +1,28 @@
+﻿@model TanmiahClone.Models.InterestingCartModel
+@if (Model != null)
+{
+
+    foreach (var items in Model.list)
+    {
+        <div class="swiper-slide">
+            <div class="card">
+                <a class="full-click" href="javascript:void(0)">product</a>
+                <div class="card-media">
+                    <div class="card-image">
+                        <img src="@Url.Content(items.Images)" class="object-fit"
+                             alt="Listing image">
+                    </div>
+                </div>
+                <div class="card-info-small">@items.Name</div>
+                <h3>@items.Title</h3>
+                <p>
+                    @items.Discription]
+                </p>
+            </div>
+        </div>
+    }
+
+
+
+
+}

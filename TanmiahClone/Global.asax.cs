@@ -13,6 +13,7 @@ namespace TanmiahClone
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            RouteConfig.RegisterViewEngins(ViewEngines.Engines);
         }
     }
 }
